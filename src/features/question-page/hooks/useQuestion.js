@@ -29,7 +29,7 @@ const useQuestion = () => {
 
   useEffect(() => {
     setQuestions(questionmodel[QuestionNumber].question);
-    setAnswer(questionmodel[QuestionNumber].answers[questionmodel[QuestionNumber].correctAnswer]);
+    setAnswer(questionmodel[QuestionNumber].answers[questionmodel[QuestionNumber].correctAnswer-1]);
     setAnswer1(questionmodel[QuestionNumber].answers[0]);
     setAnswer2(questionmodel[QuestionNumber].answers[1]);
     setAnswer3(questionmodel[QuestionNumber].answers[2]);
