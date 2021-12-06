@@ -22,6 +22,13 @@ const QuestionWrapper = styled.div`
       margin: 3px 0 !important;
   }
 
+  #licence-img{
+    height:250px;
+    width:250px;
+    object-fit:cover;
+    margin: 20px 0;
+  }
+
   #correct-answer{
     font-size: 26px;
     font-weight: 600;
