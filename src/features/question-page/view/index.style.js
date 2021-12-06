@@ -25,7 +25,7 @@ const QuestionWrapper = styled.div`
   #licence-img{
     height:250px;
     width:250px;
-    object-fit:cover;
+    object-fit:contain;
     margin: 20px 0;
   }
 
