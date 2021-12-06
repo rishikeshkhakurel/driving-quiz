@@ -29,7 +29,7 @@ const useQuestion = () => {
 
   useEffect(() => {
     setQuestions(questionmodel[QuestionNumber].question);
-    setAnswer(questionmodel[QuestionNumber].correctAnswer);
+    setAnswer(questionmodel[QuestionNumber].answers[questionmodel[QuestionNumber].correctAnswer]);
     setAnswer1(questionmodel[QuestionNumber].answers[0]);
     setAnswer2(questionmodel[QuestionNumber].answers[1]);
     setAnswer3(questionmodel[QuestionNumber].answers[2]);
@@ -39,7 +39,6 @@ const useQuestion = () => {
   }, [QuestionNumber]);
 
   const nextQuestion = () => {
-    console.log();
     setQuestionNumber((prevQuestionNumber) => prevQuestionNumber + 1);
   };
 
