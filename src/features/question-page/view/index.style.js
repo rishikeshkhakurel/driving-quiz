@@ -23,8 +23,8 @@ const QuestionWrapper = styled.div`
   }
 
   #licence-img{
-    height:250px;
-    width:250px;
+    height:150px;
+    width:150px;
     object-fit:cover;
     margin: 20px 0;
   }
