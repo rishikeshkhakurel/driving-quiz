@@ -37,7 +37,7 @@ function QuestionAnswer() {
         {Answerstate && (
           <div>
             <br />
-            <span id="question">{Answer}</span>
+            <span id="correct-answer">{Answer}</span>
           </div>
         )}
         <br />

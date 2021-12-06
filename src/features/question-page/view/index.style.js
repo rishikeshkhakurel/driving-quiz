@@ -22,6 +22,13 @@ const QuestionWrapper = styled.div`
       margin: 3px 0 !important;
   }
 
+  #correct-answer{
+    font-size: 26px;
+    font-weight: 600;
+    color:#4caf50;
+
+  }
+
   #show-answer,
   #next-question {
     margin: 10px 0;
