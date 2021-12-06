@@ -32,6 +32,19 @@ const QuestionWrapper = styled.div`
     border-radius: 2px;
     margin: 10px 0;
   }
+
+  #clock-question{
+    display:flex;
+
+    #clock{
+      margin-left:10px;
+      font-size:26px;
+    }
+
+    #seconds{
+      margin-left:10px;
+    }
+  }
 `;
 
 export default QuestionWrapper;
