@@ -26,6 +26,7 @@ const QuestionWrapper = styled.div`
     height:250px;
     width:250px;
     object-fit:cover;
+    margin: 20px 0;
   }
 
   #correct-answer{
