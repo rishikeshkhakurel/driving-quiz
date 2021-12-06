@@ -27,11 +27,11 @@ function QuestionAnswer() {
         <span id="question">{Questions}</span><div id="clock"><FcClock/><span id="seconds">{seconds}</span></div>
         </div>
         <div id="answer-list">
+          <img src={Licenceimg} alt="licence" id="licence-img" />
           <span className="answer">क. {Answer1}</span>
           <span className="answer">ख. {Answer2}</span>
           <span className="answer">ग. {Answer3}</span>
           <span className="answer">घ. {Answer4}</span>
-          <img src={Licenceimg} alt="licence" id="licence-img" />
         </div>
         <Button color="primary" variant="contained" id="show-question" onClick={showAnswer}>
           Show Ans
