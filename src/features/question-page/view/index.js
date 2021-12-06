@@ -33,9 +33,9 @@ function QuestionAnswer() {
           <span className="answer">ग. {Answer3}</span>
           <span className="answer">घ. {Answer4}</span>
         </div>
-        <Button color="primary" variant="contained" id="show-question" onClick={showAnswer}>
+        {/* <Button color="primary" variant="contained" id="show-question" onClick={showAnswer}>
           Show Ans
-        </Button>
+        </Button> */}
         {Answerstate && (
           <div>
             <br />

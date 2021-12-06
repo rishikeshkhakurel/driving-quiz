@@ -4,6 +4,10 @@ const QuestionWrapper = styled.div`
   background: #f0f2f5;
   height: 100vh;
 
+  @media screen and (max-width: 1000px) {
+    height:100%;
+    }
+
   #question-answer-container {
     padding: 20px;
   }
