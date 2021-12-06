@@ -2,6 +2,7 @@ import React from "react";
 import useQuestion from "../hooks/useQuestion";
 import QuestionWrapper from "./index.style";
 import { FcClock } from "react-icons/fc";
+import { Button } from "@mui/material";
 
 function QuestionAnswer() {
   const {
@@ -30,9 +31,9 @@ function QuestionAnswer() {
           <span className="answer">3. {Answer3}</span>
           <span className="answer">4. {Answer4}</span>
         </div>
-        <button id="show-answer" onClick={showAnswer}>
+        <Button color="primary" variant="contained" id="show-question" onClick={showAnswer}>
           Show Ans
-        </button>
+        </Button>
         {Answerstate && (
           <div>
             <br />
@@ -40,9 +41,9 @@ function QuestionAnswer() {
           </div>
         )}
         <br />
-        <button id="next-question" onClick={nextQuestion}>
+        <Button color="primary" variant="contained" id="next-question" onClick={nextQuestion}>
           Next Question
-        </button>
+        </Button>
       </div>
     </QuestionWrapper>
   );

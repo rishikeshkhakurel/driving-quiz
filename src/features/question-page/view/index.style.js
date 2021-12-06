@@ -24,12 +24,6 @@ const QuestionWrapper = styled.div`
 
   #show-answer,
   #next-question {
-    background: #1c84fd;
-    color: white;
-    outline: 0;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 2px;
     margin: 10px 0;
   }
 
