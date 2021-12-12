@@ -9,6 +9,7 @@ const useQuestion = () => {
   const [Answer2, setAnswer2] = useState("");
   const [Answer3, setAnswer3] = useState("");
   const [Answer4, setAnswer4] = useState("");
+  const [Image,setImage]=useState("");
   const [Answerstate, setAnswerstate] = useState(false);
 
   const [seconds, setSeconds] = useState(10);
@@ -34,6 +35,7 @@ const useQuestion = () => {
     setAnswer2(questionmodel[QuestionNumber].answers[1]);
     setAnswer3(questionmodel[QuestionNumber].answers[2]);
     setAnswer4(questionmodel[QuestionNumber].answers[3]);
+    setImage(questionmodel[QuestionNumber].image);
     setAnswerstate(false);
     setSeconds(10)
   }, [QuestionNumber]);
@@ -58,6 +60,7 @@ const useQuestion = () => {
     showAnswer,
     Answerstate,
     seconds,
+    Image
   };
 };
 

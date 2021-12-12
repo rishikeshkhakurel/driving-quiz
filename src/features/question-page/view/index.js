@@ -3,7 +3,6 @@ import useQuestion from "../hooks/useQuestion";
 import QuestionWrapper from "./index.style";
 import { FcClock } from "react-icons/fc";
 import { Button } from "@mui/material";
-import Licenceimg from "../../../common/assets/license.jpg"
 
 function QuestionAnswer() {
   const {
@@ -14,9 +13,10 @@ function QuestionAnswer() {
     Answer2,
     Answer3,
     Answer4,
-    showAnswer,
+    // showAnswer,
     Answerstate,
-    seconds
+    seconds,
+    Image
   } = useQuestion();
 
   return (
@@ -27,7 +27,7 @@ function QuestionAnswer() {
         <span id="question">{Questions}</span><div id="clock"><FcClock/><span id="seconds">{seconds}</span></div>
         </div>
         <div id="answer-list">
-          <img src={Licenceimg} alt="licence" id="licence-img" />
+          <img src={Image} alt="licence" id="licence-img" />
           <span className="answer">क. {Answer1}</span>
           <span className="answer">ख. {Answer2}</span>
           <span className="answer">ग. {Answer3}</span>
