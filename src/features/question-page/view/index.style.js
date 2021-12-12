@@ -4,7 +4,7 @@ const QuestionWrapper = styled.div`
   background: #f0f2f5;
   height: 100vh;
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 500px) {
     height:100%;
     }
 
