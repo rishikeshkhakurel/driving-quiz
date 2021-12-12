@@ -16,18 +16,21 @@ function QuestionAnswer() {
     // showAnswer,
     Answerstate,
     seconds,
-    Image
+    Image,
   } = useQuestion();
 
   return (
     <QuestionWrapper>
       <div id="question-answer-container">
         <div id="clock-question">
-
-        <span id="question">{Questions}</span><div id="clock"><FcClock/><span id="seconds">{seconds}</span></div>
+          <span id="question">{Questions}</span>
+          <div id="clock">
+            <FcClock />
+            <span id="seconds">{seconds}</span>
+          </div>
         </div>
         <div id="answer-list">
-          <img src={Image} alt="licence" id="licence-img" />
+          {Image && <img src={Image} alt="licence" id="licence-img" />}
           <span className="answer">क. {Answer1}</span>
           <span className="answer">ख. {Answer2}</span>
           <span className="answer">ग. {Answer3}</span>
@@ -43,7 +46,12 @@ function QuestionAnswer() {
           </div>
         )}
         <br />
-        <Button color="primary" variant="contained" id="next-question" onClick={nextQuestion}>
+        <Button
+          color="primary"
+          variant="contained"
+          id="next-question"
+          onClick={nextQuestion}
+        >
           Next Question
         </Button>
       </div>
